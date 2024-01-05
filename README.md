@@ -31,7 +31,7 @@ Visual Studio Code (VSCode) is a free, modern code editor used by everyone from 
 
 ### Command Line Basics
 
-If you do not have much experience using a terminal or command line, please take 30 minutes or so to try out using the terminal with an introduction from a reputable source like [The Odin Project](https://www.theodinproject.com/lessons/foundations-command-line-basics) or [MDN (a little more web development focused, but also more comprehensive)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line). On Mac, you can complete this in your terminal; on Windows, you can use Git Bash, installation instructions below, or you can set up the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/), which requires more configuration, but is very cool.
+If you do not have much experience using a terminal or command line, please take 30 minutes or so to try out using the terminal with an introduction from a reputable source like [The Odin Project](https://www.theodinproject.com/lessons/foundations-command-line-basics) or [MDN (a little more web development focused, but also more comprehensive)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line). On Mac, you can complete this in the Terminal app; on Windows, you can use Git Bash, installation instructions below, or you can set up the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/), which requires more configuration, but is very cool.
 
 ### git
 
