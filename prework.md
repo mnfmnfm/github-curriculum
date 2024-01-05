@@ -1,14 +1,16 @@
 # Prework/Installation
 
-Prior to the course, you have two tools to install, VSCode and git, and a few other prereqs: identifying a project to upload to GitHub on our first day, signing up for a GitHub account, and making sure you have a bit of experience with the command line.
+Prior to the course, you have two tools to install, VSCode and git, and a few other prereqs: practicing with the command line, signing up for a GitHub account, and choosing a project that you'll upload to GitHub during our first workshop.
 
 If you have any questions or run into issues with these steps, feel free to email Michelle, michelle at ferreirae dot com, or come early the first day of the program so we can debug it together.
 
-### VSCode
+### VSCode installation
 
 Visual Studio Code (VSCode) is a free, modern code editor used by everyone from small companies to tech giants. Install for Windows, Mac or Linux from [their website](https://code.visualstudio.com/). Once you have it installed, open up any past coding project in it, just to get a feel for the interface.
 
 ### Command Line Basics
+
+Optional: if you have experience using the command line, you may skip this step!
 
 If you do not have much experience using a terminal or command line, please take 30 minutes or so to try out using the terminal with an introduction from a reputable source like [The Odin Project](https://www.theodinproject.com/lessons/foundations-command-line-basics) or [MDN (a little more web development focused, but also more comprehensive)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line). On Mac, you can complete this in the Terminal app; on Windows, you can use Git Bash, installation instructions below, or you can set up the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/), which requires more configuration, but is very cool.
 
@@ -16,7 +18,7 @@ If you do not have much experience using a terminal or command line, please take
 
 If you do not already have one, please sign up for an account on [GitHub's website](https://github.com/). This will allow you to push code from your computer to GitHub.
 
-### git
+### git installation
 
 Git is the command line tool that will allow us to perform version control, which is a key objective of the course. Installation instructions vary per operating system.
 
