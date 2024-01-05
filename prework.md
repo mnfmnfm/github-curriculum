@@ -32,7 +32,7 @@ You'll also need to install the [Git Credential Manager](https://github.com/git-
 
 Use the Download button on the [Git for Windows homepage](https://gitforwindows.org/) to install both git and Git BASH on your Windows machine. The only default you should change is on the screen for "Adjusting the name of the initial branch in new repositories", choose the option to "Override the default branch name for new repositories". Its suggestion of "main" is correct.
 
-TODO add a screenshot of this
+![Windows installation screenshot](windows-install.png)
 
 ### Configure Git (all operating systems)
 
