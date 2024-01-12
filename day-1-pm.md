@@ -12,3 +12,4 @@
   - Milestones, MVP, and Stretch Goals
 - Time to plan
   - 
+- 3:30pm Mathworks Resume Workshop and Technical Interview Prep

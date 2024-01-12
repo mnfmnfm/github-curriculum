@@ -3,19 +3,25 @@
 ## Agenda
 
 - Debugging installations
-- Intros, icebreakers
-- Command Line Review
-- Intro to Git and GitHub
-- Using Git on the Command Line
-  - Creating Repos
-  - Making Commits
-- Using Git with GitHub
+- Intros, icebreakers (30 mins)
+- Command Line Review (15 mins)
+- Intro to Git and GitHub (5 mins)
+- Using Git on the Command Line (20 mins)
+  - Creating repos
+  - Obtaining existing repos
+  - Making commits
+- Using Git with GitHub (20 mins)
   - Pushing Code to GitHub
   - README files
     - Why
     - Markdown syntax
     - Creating and adding to past projects
-
+- Lab: Working with Git (45 minutes)
+- Branches (15 minutes)
+  - What
+  - Creating a branch and making commits
+  - Merging from a feature branch into the main branch
+- Lab: Practicing with branches (30 minutes)
 
 ## Cheat Sheet
 
@@ -57,10 +63,62 @@ GitHub is an online, social place to store `git` repositories.
 
 This means that you can use `git` on your computer to do as much version control as you want, but if you want to make that code visible to other people or work with a team, you'll need GitHub (or another remote) to make that possible.
 
-## Creating Repos
+## Git on the Command Line
+
+### Creating Repos
 
 To create a repository on the command line, use `cd` to open the director that you want to turn into a git repository. Run `git init` to turn that folder into a git repository. By making that folder a git repository, git will be able to track version history for the files in that directory.
 
 To create a repository on GitHub, click on the '+' button in the upper righthand corner, and choose "new repository".
 
+### Getting Existing Repos Onto Your Computer
+
+If you want to get an existing repo from GitHub onto your computer - for example, to work on an open-source project, or because you're working on a team and your teammate created the git repo - you can use the `clone` command. On GitHub, the clone link is listed when you click on the green "Code" button on the top right of a repo. If you copy that link, then you can open your terminal to the location on your computer where you want to copy the code, and run:
+
+```bash
+git clone pasted-url-here
+```
+
+That will copy the existing code onto your computer.
+
+### Making Commits
+
+When you've written some code or made edits that you want to save, it's time to make a commit! A good first step is always to run `git status` so you can see wht git thinks the status of your repo is; you can run this command as often as you want and it will not break anything, so especially as you're getting started, I encourage you to run `git status` at every step of the process, to follow along with the changes you're making.
+
+When you're ready to get started, you'll run `git add filename.py` which adds that file to be part of your next commit. This doesn't actually commit the file; it just allows you to pick which files are part of the commit and which aren't. You can run this as many times as you need to add all the files you want to commit.
+
+Instead of adding files one by one, if you check `git status` and realize that you want to add EVERY file you have changed, you can do that in a single command with `git add .`. (Or, you can add every file in a directory by specifying which directory.)
+
+Then, once you've added all the changed files that you want to commit, you'll run `git commit -m "description of the commit"`. For that description, put something useful to you - you want this commit message to have a good enough description that you can use it to track down this set of changes later.
+
+## Connecting Git and GitHub
+
+Once you have at least one commit on your local repo, you're ready to connect your code to GitHub!
+
+First, you'll need a repo on GitHub to connect to. Go to GitHub and click the `+` button in the upper right corner of the page to create a "New repository". Give it a nice name with no spaces - this will often match the name of the directory where your code for the project lives. Any of UpperCamelCase, lowerCamelCase, kebab-case, or snake_case are acceptable; you'll usually choose based on the conventions of the language your project is written in (python often in snake_case, Java often in lowerCamelCase, etc). You'll leave all the other defaults as-is, and click "Create repository" at the bottom of the page.
+
+Once you've made your empty repo on GitHub, it's time to link that empty repo up with your local repo. On GitHub, it will provide you with quickstart steps, and you want the second option: "... or connect to an existing repo". Copy those lines of code and paste them in your terminal. This will include two lines of setup, and then one line that sends the code from your computer to GitHub: `git push -u origin main`. Once you've run that line, you should be able to refresh the page and see your code on GitHub. Woohoo!
+
+## README files and Markdown
+
+
+
+## Complete Basic Workflow
+
+- Initial Setup
+  - `git init` or `git clone`
+- Ongoing
+  - write some code
+  - `git status`
+  - `git add filename` or `git add .`
+  - `git commit -m "descriptive message"`
+- To take the commits you've made locally and put them on GitHub
+  - `git push`
+
+## Lab: Working with Git
+
+1. Choose a project that you want to put on GitHub and, using the directions above and the basic workflow reminder, create a git repo for that project, commit all of your existing code, connect your local repo to a GitHub repo, and push your existing code to GitHub. Refresh the page on GitHub to ensure that you can see your code.
+2. Add a README file to your existing project. Name it `README.md` and place it at the root of your repo. Inside, add a header and a brief description of your project. Add, commit, and push to GitHub, and ensure that you can see your README file on GitHub.
+3. [Stretch goal] Add more context to your README file. Include sections like screenshots, lists of the technologies used, collaborators, links to references, future work, or anything else that is relevant to your project.
+4. [Stretch goal] Challenge yourself to use more Markdown features in your README file. Add in a table, a numbered list, a bulleted list, an image, and links.
 
