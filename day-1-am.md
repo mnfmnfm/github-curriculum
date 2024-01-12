@@ -101,7 +101,58 @@ Once you've made your empty repo on GitHub, it's time to link that empty repo up
 
 ## README files and Markdown
 
+One of the goals of putting code on GitHub is to allow recruiters and hiring managers to see your code. But imagine looking at a code file and diving into reading it with no context - it would be hard to figure out what the point even was, let alone if the code was good. That's where a README file comes in - it's a place where you can explain what your code is. It's also the first thing that recruiters and hiring managers will see when they look at your code, so it's important to make a good first impression!
 
+You should include enough information in your README file that if someone was linked directly to that repo with no other information, they would know what the purpose of the code in the repo was, and would have some understanding of the purpose of the project. [Here is an example](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc) of a simple but effective README template.
+
+README files are written with Markdown syntax - it's a simplified formatting language. It's simple enough that, after you see a few examples, it's easy to write by referencing a cheat sheet - [this](https://www.markdownguide.org/cheat-sheet/) is the cheat sheet that I tend to use.
+
+As one example, this file (and all the files in this curriculum) are Markdown files rendered by GitHub.
+
+
+Some of the Markdown tools I use most often:
+~~~md
+# Big heading
+## Smaller heading
+### Even smaller (these go down to 6)
+
+[This is link text](https://google.com)
+
+* bullet points
+* making a list
+
+1. numbered lists
+1. you can use 1 for all the numbers
+1. markdown replaces the 1's with the correct numbers
+
+A small piece of code goes in backticks: `git init`
+
+A larger piece of code goes in three backticks with the language specified, like this:
+
+```javascript
+console.log('This is some javascript code!');
+```
+
+~~~
+
+And the non-headings as rendered by Markdown:
+
+[This is link text](https://google.com)
+
+* bullet points
+* making a list
+
+1. numbered lists
+1. you can use 1 for all the numbers
+1. markdown replaces the 1's with the correct numbers
+
+A small piece of code goes in backticks: `git init`
+
+A larger piece of code goes in three backticks, like this:
+
+```javascript
+console.log('This is some javascript code!');
+```
 
 ## Complete Basic Workflow
 
