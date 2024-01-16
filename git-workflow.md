@@ -1,6 +1,6 @@
 # Full Git Workflow
 
-This is the full Git workflow that we will build to by day 2 of the workshop.
+This is the full Git workflow that we will build to by day 2 of the workshop. Note that before day 2, we will not know all of the commands in this document, so it might still be helpful, but 
 
 ## Setting Up Your Project
 
