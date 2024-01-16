@@ -2,39 +2,80 @@
 
 ## Agenda
 
-- Review of previous day's content
 - Multiplayer GitHub
-    - Creating organizations
-    - Creating a single repository and adding collaborators
+    - Adding collaborators
+    - Cloning repos
+- Branches
+    - What
+    - How
+    - Lab
 - Code Review
     - Best practices
-    - Branch protection
-    - Lab: review some code
 - Merge Conflicts
     - How they happen
     - Resolving them
     - Lab: resolving merge conflicts
-- Advanced Git Topics
-    - Rebasing
-    - Stashing
-    - Cherry picking
 - Any extra time: project time
 
 ## Working on Teams
 
 There are two main ways to work with other people on GitHub. For larger projects, or especially if you are working with the same people on many different projects or repos, GitHub organizations provide a useful way of organizing people and code. Or, for smaller projects, you can directly add collaborators to a repo.
 
-### Creating Organizations
-
-There are two main benefits to creating an organization on GitHub. One is that repos can be owned by an organization, rather than an individual, which will mean the GitHub URL starts with the organization name, which looks cool. The other benefit is, especially if you are working with the same group of people on many projects/many repos, you can add them to your organization once, and they'll get some access automatically to new repos in that organization.
-
-To create an organization on GitHub, you use the same plus button at the top right of the page as for creating a new repo. You'll need to invite people into your organization, and there are also settings for what permissions people in your organization have by default - note that by default, org members do not have write access to repos, so they will not be able to push code to the repo until you give them permission or change that setting.
-
-### Adding Directly to Repos
+### Adding Collaborators Directly to Repos
 
 Adding collaborators directly to a repo is the lightest-weight, easiest way to work with other people on a one-off coding project.
 
 To add collaborators to a repo, visit the "settings" page for your repo, choose "collaborators" on the left, and enter the email addresses or GitHub usernames of the people you would like to collaborate with. Note that the people you invite will need to check their emails and accept the invitation to be able to collaborate on that repo.
+
+### Cloning Code
+
+When we create a new repo, we do that with `git init` and then connect the repo with one on GitHub. But when working on a team, you only need to create a single repo, and you'll use `git clone` to copy that repo onto multiple computers.
+
+Once someone on your team has created a repo for your team to work in, the rest of your team should clone the repo onto your own computers. To do this, on the GitHub repo's website, click on the green "Code" button, and copy the URL that appears under the "Local" tab.
+
+![Image of the Code button on GitHub](github-copy-code.png)
+
+Take that URL to the command line. `cd` to wherever you want that code to live on your computer, and run:
+
+```bash
+git clone https://TheGitHubUrlThatYouCopiedGoesHere
+```
+
+Now, you have a fully-featured version of that code on your computer, in the same 
+
+## Branches and Pull Requests
+
+Branches on git allow you to create multiple different timelines with commits. A new branch acts as a parallel universe - you can have new commits on that branch that are different from an existing branch. This is commonly used on development teams so that each person can do their work on a separate branch, and once you complete each task, you then merge that branch in with your `main` branch to get those changes back onto the main branch.
+
+These get visualized often in diagrams that look like this example, taken from [the Maybe Finance repo](https://github.com/maybe-finance/maybe). In this diagram, each horizontal line represents a single branch, and each dot represents a commit on that branch. In particular, near the top of the image, you can see the blue line, a new feature branch, where some work gets done, a new commit is made, and then that commit is merged back in to the main branch. This happens twice. The other horizontal lines represent feature branches with ongoing work.
+
+![Branching git commit history](git-history.png)
+
+Your general workflow will be to create a new branch for each feature you wish to build. You'll work on that branch until you've finished the feature you want to build, then you'll create a *pull request* on GitHub to merge that feature branch back into your main branch. On a team, your teammates will then look at that pull request to review your code and make sure it looks good; then, assuming all has gone well, you will merge that branch into your GitHub repo, and pull those changes onto your local main branch.
+
+The git commands you will use to implement this workflow:
+
+```bash
+git checkout -b featurebranchname # check out a new feature branch
+# write your code
+git add . # add your code files to be committed
+git commit -m "description of commit"
+# repeat add/commit while you continue writing code. when you have finished adding/committing all your code:
+git push -u origin featurebranchname
+# go to GitHub and create pull request
+# review your own code
+# merge pull request on GitHub
+# now, to get the GitHub code back onto your machine:
+git checkout main # switch back to main branch
+git pull # pulls the merged code from GitHub onto your computer
+# now you are ready to start from the top by creating a new feature branch!
+```
+
+## Lab: Practice Git with Branching
+
+1. Identify a change that you want to make to your existing git repo. (For the first one, do something easy, like adding comments or updating your README file, so you can practice with the workflow).
+2. Using the workflow steps above, check out a feature branch and make that change.
+3. Repeat to continue practicing with git branching.
 
 ## Code Review
 

@@ -174,37 +174,3 @@ console.log('This is some javascript code!');
 2. Add a README file to your existing project. Name it `README.md` and place it at the root of your repo. Inside, add a header and a brief description of your project. Add, commit, and push to GitHub, and ensure that you can see your README file on GitHub.
 3. [Stretch goal] Add more context to your README file. Include sections like screenshots, lists of the technologies used, collaborators, links to references, future work, or anything else that is relevant to your project.
 4. [Stretch goal] Challenge yourself to use more Markdown features in your README file. Add in a table, a numbered list, a bulleted list, an image, and links.
-
-## Branches and Pull Requests
-
-Branches on git allow you to create multiple different timelines with commits. A new branch acts as a parallel universe - you can have new commits on that branch that are different from an existing branch. This is commonly used on development teams so that each person can do their work on a separate branch, and once you complete each task, you then merge that branch in with your `main` branch to get those changes back onto the main branch.
-
-These get visualized often in diagrams that look like this example, taken from [the Maybe Finance repo](https://github.com/maybe-finance/maybe). In this diagram, each horizontal line represents a single branch, and each dot represents a commit on that branch. In particular, near the top of the image, you can see the blue line, a new feature branch, where some work gets done, a new commit is made, and then that commit is merged back in to the main branch. This happens twice. The other horizontal lines represent feature branches with ongoing work.
-
-![Branching git commit history](git-history.png)
-
-Your general workflow will be to create a new branch for each feature you wish to build. You'll work on that branch until you've finished the feature you want to build, then you'll create a *pull request* on GitHub to merge that feature branch back into your main branch. On a team, your teammates will then look at that pull request to review your code and make sure it looks good; then, assuming all has gone well, you will merge that branch into your GitHub repo, and pull those changes onto your local main branch.
-
-The git commands you will use to implement this workflow:
-
-```bash
-git checkout -b featurebranchname # check out a new feature branch
-# write your code
-git add . # add your code files to be committed
-git commit -m "description of commit"
-# repeat add/commit while you continue writing code. when you have finished adding/committing all your code:
-git push -u origin featurebranchname
-# go to GitHub and create pull request
-# review your own code
-# merge pull request on GitHub
-# now, to get the GitHub code back onto your machine:
-git checkout main # switch back to main branch
-git pull # pulls the merged code from GitHub onto your computer
-# now you are ready to start from the top by creating a new feature branch!
-```
-
-## Lab: Practice Git with Branching
-
-1. Identify a change that you want to make to your existing git repo. (For the first one, do something easy, like adding comments or updating your README file, so you can practice with the workflow).
-2. Using the workflow steps above, check out a feature branch and make that change.
-3. Repeat to continue practicing with git branching.
