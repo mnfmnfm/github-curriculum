@@ -1,4 +1,4 @@
-# Workshop Day 2
+# Day 2 Morning Session
 
 ## Agenda
 
