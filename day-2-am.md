@@ -41,7 +41,7 @@ Take that URL to the command line. `cd` to wherever you want that code to live o
 git clone https://TheGitHubUrlThatYouCopiedGoesHere
 ```
 
-Now, you have a fully-featured version of that code on your computer, in the same 
+Now, you have a fully-featured version of that code on your computer.
 
 ## Branches and Pull Requests
 
@@ -74,7 +74,8 @@ git pull # pulls the merged code from GitHub onto your computer
 ## Lab: Practice Git with Branching
 
 1. Identify a change that you want to make to your existing git repo. (For the first one, do something easy, like adding comments or updating your README file, so you can practice with the workflow).
-2. Using the workflow steps above, check out a feature branch and make that change.
+2. Using the workflow steps above, check out a feature branch and make that change. Push your new branch to GitHub, make a pull request, and merge it into your main branch.
+3. Switch to your main branch on the terminal and pull down your code from GitHub.
 3. Repeat to continue practicing with git branching.
 
 ## Code Review
