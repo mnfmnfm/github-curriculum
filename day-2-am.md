@@ -23,9 +23,9 @@ There are two main ways to work with other people on GitHub. For larger projects
 
 ### Adding Collaborators Directly to Repos
 
-Adding collaborators directly to a repo is the lightest-weight, easiest way to work with other people on a one-off coding project.
+Adding collaborators directly to a repo is the lightest-weight, easiest way to work with other people on a one-off coding project, so that's what we'll focus on for your project this week.
 
-To add collaborators to a repo, visit the "settings" page for your repo, choose "collaborators" on the left, and enter the email addresses or GitHub usernames of the people you would like to collaborate with. Note that the people you invite will need to check their emails and accept the invitation to be able to collaborate on that repo.
+To add collaborators to a repo, visit the "settings" page for your repo, choose "collaborators" on the left, and enter the email addresses or GitHub usernames of the people you would like to collaborate with. Note that the people you invite will need to *check their email* and accept the invitation to be able to collaborate on that repo.
 
 ### Cloning Code
 
