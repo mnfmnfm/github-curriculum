@@ -83,13 +83,13 @@ That will copy the existing code onto your computer.
 
 ### Making Commits
 
-When you've written some code or made edits that you want to save, it's time to make a commit! A good first step is always to run `git status` so you can see wht git thinks the status of your repo is; you can run this command as often as you want and it will not break anything, so especially as you're getting started, I encourage you to run `git status` at every step of the process, to follow along with the changes you're making.
+When you've written some code or made edits that you want to save, it's time to make a commit! A good first step is always to run `git status` so you can see what git thinks the status of your repo is; you can run this command as often as you want and it will not break anything, so especially as you're getting started, I encourage you to run `git status` at every step of the process, to follow along with the changes you're making.
 
 When you're ready to get started, you'll run `git add filename.py` which adds that file to be part of your next commit. This doesn't actually commit the file; it just allows you to pick which files are part of the commit and which aren't. You can run this as many times as you need to add all the files you want to commit.
 
 Instead of adding files one by one, if you check `git status` and realize that you want to add EVERY file you have changed, you can do that in a single command with `git add .`. (Or, you can add every file in a directory by specifying which directory.)
 
-Then, once you've added all the changed files that you want to commit, you'll run `git commit -m "description of the commit"`. For that description, put something useful to you - you want this commit message to have a good enough description that you can use it to track down this set of changes later.
+Then, once you've added all the changed files that you want to commit, you'll run `git commit -m "description of the commit"`. For that description, put something useful to you - you want this commit message to have a good enough description that you can use it to track down this set of changes later. Usually, this is between 3 and 10 words. It's standard that for the first commit in a new repo, the commit message is `initial commit`.
 
 ## Connecting Git and GitHub
 
@@ -150,7 +150,7 @@ And the non-headings as rendered by Markdown:
 
 A small piece of code goes in backticks: `git init`
 
-A larger piece of code goes in three backticks, like this:
+A larger piece of code goes in three backticks with the language specified, like this:
 
 ```javascript
 console.log('This is some javascript code!');
