@@ -11,7 +11,6 @@
   - Milestones, MVP, and Stretch Goals
 - Time to plan
   - Using GitHub
-- 3:30pm Mathworks Resume Workshop and Technical Interview Prep
 
 ## Project Expectations
 
