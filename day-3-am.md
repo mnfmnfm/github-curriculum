@@ -26,3 +26,11 @@ Deployment is the process of making the new code you've written available to use
 * Installed/desktop applications: lots of options, but most commonly, deployment will look like making the newest version of your code available to be installed in the same way you initially made it available, and maybe prompting users within your application that a new version is available.
 
 We'll look at an example of deploying a web application together.
+
+## Monitoring
+
+Once your application is available to users, as a developer, you'll generally move on to working on the next set of features, going back through the software development lifecycle again from planning onwards. But, there's one other critical step - ensuring that your deployed application continues to function correctly into the future.
+
+Monitoring is the process by which you make this happen. The easy-but-bad form of monitoring is to check the logs manually yourself and gain insight from those logs - ideally, you want to set up your application so that you will be notified automatically if something is going wrong in the running of your application.
+
+As an example of what setting that up looks like, you can check out [OTEL](https://opentelemetry.io/docs/languages/) or Open Telemetry, which is a vendor-neutral set of instrumentation libraries that can plug into your project to automatically report metrics. At most companies, that'll be hooked up to a backend like DataDog, New Relic, or Splunk, which are examples of platforms that allow you to set up alerts based on the metrics that your application reports.
