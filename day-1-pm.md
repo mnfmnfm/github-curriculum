@@ -56,6 +56,8 @@ Milestone 5: The user can add pictures of their recipes (stretch goal)
 Milestone 6: The user can edit existing recipes (stretch goal)
 ```
 
+To track these milestones, most software development teams use online tools like Jira, Asana or Trello. One great option for your team will be to use GitHub Issues, which allows you to track issues and associate them with specific commits. We'll demonstrate that together.
+
 ### Some Free Project Ideas
 
 - A command line choose-your-own-adventure game
@@ -67,4 +69,4 @@ Milestone 6: The user can edit existing recipes (stretch goal)
 
 When you've settled on a project idea, your next step is to **show it to Michelle**. She'll take a look at your pitch, project milestones, and any wireframes or other descriptions of your project, and give you feedback and tips on anything that you might want to flesh out further before you start writing code.
 
-Then, once you have the green light, you can create a GitHub repo and add your teammates as collaborators. Start working on your README file in that repo.
+Then, once you have the green light, you can create a GitHub repo and add your teammates as collaborators. Start working on your README file in that repo, and translate your milestones into GitHub issues. (You can also create smaller issues, which might make it easier to assign an issue to a person - just make sure to reference which milestone each issue belongs to.)
