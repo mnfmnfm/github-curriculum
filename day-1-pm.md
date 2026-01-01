@@ -5,6 +5,7 @@
 - GitHub review
   - Time to review any questions from the morning's workshop
 - Project Prep
+  - SDLC: Planning
   - Scoping for this week
   - Expectations
   - Pitches and Wireframes
@@ -66,4 +67,4 @@ Milestone 6: The user can edit existing recipes (stretch goal)
 
 When you've settled on a project idea, your next step is to **show it to Michelle**. She'll take a look at your pitch, project milestones, and any wireframes or other descriptions of your project, and give you feedback and tips on anything that you might want to flesh out further before you start writing code.
 
-Then, once you have the green light, you can create a GitHub repo and add your teammates as collaborators.
+Then, once you have the green light, you can create a GitHub repo and add your teammates as collaborators. Start working on your README file in that repo.

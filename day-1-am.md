@@ -4,6 +4,7 @@
 
 - Debugging installations
 - Intros, icebreakers (30 mins)
+- The Software Development Lifecycle
 - Command Line Review (15 mins)
 - Intro to Git and GitHub (5 mins)
 - Using Git on the Command Line (20 mins)
@@ -23,7 +24,22 @@
   - Merging from a feature branch into the main branch
 - Lab: Practicing with branches (30 minutes)
 
-## Cheat Sheet
+
+## Software Development Lifecycle (SDLC)
+
+At most companies, the process of creating software is formalized into a process called the Software Development Lifecycle. While the specific steps and implementation will differ from company to company, there are some commonalities that are useful to think about as we embark on our software project this week.
+
+The basic phases of the software development lifecycle are:
+
+1. Planning
+1. Development
+1. Build/Test
+1. Deployment
+1. Maintenance/Monitoring
+
+We'll reference these phases during our project this week. We'll go deeper on the planning and development phases, since those are the two phases that you'll spend the most time on this week, but we'll also talk about what the other phases look like and whether you might be able to implement them for your projects.
+
+## Git Cheat Sheet
 
 ```bash
 # General Terminal Commands
