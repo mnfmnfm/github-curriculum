@@ -16,7 +16,7 @@ If you do not have much experience using a terminal or command line, please take
 
 ### Sign Up for a GitHub Account
 
-If you do not already have one, please sign up for an account on [GitHub's website](https://github.com/). This will allow you to push code from your computer to GitHub.
+If you do not already have one, please sign up for an account on [GitHub's website](https://github.com/). This will allow you to push code from your computer to GitHub. (No preference from me on whether you use your Wellesley email address or a personal one)
 
 ### git installation
 
@@ -30,11 +30,19 @@ Once the installation has finished, close and re-open your terminal, and type `g
 
 You'll also need to install the [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.4.1). On newer Macs, download the `gcm-osx-x64-2.4.1.pkg` installer.
 
-#### git for Windows
+#### git for Windows (Streamlined)
 
 Use the Download button on the [Git for Windows homepage](https://gitforwindows.org/) to install both git and Git BASH on your Windows machine. The only default you should change is on the screen for "Adjusting the name of the initial branch in new repositories", choose the option to "Override the default branch name for new repositories". Its suggestion of "main" is correct.
 
 ![Windows installation screenshot](windows-install.png)
+
+#### git for Windows (Advanced)
+
+If you want to try something more interesting/complicated for Windows installation, you can set up the Windows Subsystem for Linux or WSL, which will give you a fully-featured Linux interface that can access the same files as your Windows OS. Installation instructions are [here](https://learn.microsoft.com/en-us/windows/wsl/install) - if you don't have another preference, Ubuntu is a good "default" Linux distribution.
+
+Then, you can open a WSL/Ubuntu terminal and run the command `sudo apt-get install git` to make sure you have the most recent version of git installed.
+
+You can find more direction on how to use git with WSL on [Microsoft's tutorial page](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git).
 
 ### Configure Git (all operating systems)
 
@@ -49,4 +57,4 @@ git config --global color.ui auto
 
 ### Identify a Prior Project
 
-To practice making git repos, you'll start by taking a past project that you worked on, committing it to a git repo, and pushing it to GitHub. To prepare for this, please ensure that you have some sort of a project on your computer's filesystem that you have not previously deployed. This can be any coding project, like a previous problem set, or even better, a larger project with multiple files, or a whole series of problem sets from one course. Then, for whatever project you've chosen, make sure you know where to find it on your computer, and make sure it's in a single folder/directory.
+To practice making git repos, you'll start by taking a past project that you worked on, committing it to a git repo, and pushing it to GitHub. To prepare for this, please ensure that you have some sort of a project on your computer's filesystem on which you have not previously used version control. This can be any coding project, like a previous problem set, or even better, a larger project with multiple files, or a whole series of problem sets from one course. Then, for whatever project you've chosen, make sure you know where to find it on your computer, and make sure it's in a single folder/directory.
