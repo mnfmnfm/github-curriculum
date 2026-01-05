@@ -60,11 +60,20 @@ git config --global color.ui auto
 There are a few different ways to authenticate with GitHub, but we're going to use SSH keys, which are a little bit annoying to set up, but then work extremely well forever. Once you've installed and configured git locally, you can use GitHub's instructions to set up SSH keys on your system. You'll need to follow these steps. **Note** that each step has an option at the top to toggle among Mac/Windows/Linux operating systems, so pick the right one for you.
 
 * [Generate an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    * It's easiest to generate one without a passphrase
 * [Add the SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-* [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
+You can test whether your new SSH key is working correctly by opening a terminal and running the following command, which will download this repo of course material onto your machine.
+
+```bash
+git clone git@github.com:mnfmnfm/github-curriculum.git
+```
+
+The first time you use the SSH key, you'll probably get a warning that the authenticity of the host can't be established - that's fine, type "yes" at the prompt to continue.
+
+Output that looks like this means your SSH key is working correctly!
+![Terminal output from running a successful git clone command](git-clone-success.png)
 
 ### Identify a Prior Project
 
 To practice making git repos, you'll start by taking a past project that you worked on, committing it to a git repo, and pushing it to GitHub. To prepare for this, please ensure that you have some sort of a project on your computer's filesystem on which you have not previously used version control. This can be any coding project, like a previous problem set, or even better, a larger project with multiple files, or a whole series of problem sets from one course. Then, for whatever project you've chosen, make sure you know where to find it on your computer, and make sure it's in a single folder/directory.
-
-
