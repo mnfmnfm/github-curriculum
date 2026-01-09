@@ -3,7 +3,7 @@
 ## Agenda
 
 - Debugging installations
-- Intros, icebreakers (30 mins)
+- Intros
 - The Software Development Lifecycle
 - Command Line Review (15 mins)
 - Intro to Git and GitHub (5 mins)
