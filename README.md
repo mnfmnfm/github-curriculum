@@ -28,6 +28,7 @@ See the [prework page](./prework.md) for details.
 - [Day 1 Morning Workshop](./day-1-am.md)
 - [Day 1 Afternoon Workshop](./day-1-pm.md)
 - [Day 2 Morning Workshop](./day-2-am.md)
+- [Day 3 Morning Workshop](./day-3-am.md)
 - [Reference: git workflow](./git-workflow.md)
 
 ## References
