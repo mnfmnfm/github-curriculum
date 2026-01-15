@@ -1,11 +1,12 @@
 # Presentation Guidelines
 
-* Presos start Friday at 12:30pm
+* Presentations start Friday at 12:30pm
     * During presentations, audience laptops are shut, you're paying full attention to other groups' presentations!
 * 5-8 minutes long
 * Every person in your group talks about something
 * Required presentation components:
     * Show us your README file on GitHub as you explain what your application is/does
+        * This should include your planning work, so show us your pitch/wireframes
     * Do a demo of your running application
         * (if your application is not running, 😞, do your best to explain how it would run)
     * Tell us what technologies you used to build this
