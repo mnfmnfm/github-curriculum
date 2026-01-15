@@ -1,5 +1,7 @@
 # Presentation Guidelines
 
+We love presentations!
+
 * Presentations start Friday at 12:30pm
     * During presentations, audience laptops are shut, you're paying full attention to other groups' presentations!
 * 5-8 minutes long
